@@ -2,6 +2,8 @@ from __future__ import (absolute_import, division, print_function, unicode_liter
 
 from .supervised_learner import SupervisedLearner
 from .baseline_learner import BaselineLearner
+from .perceptron_learner import PerceptronLearner
+from .neural_net_learner import NeuralNetLearner
 from .matrix import Matrix
 import random
 import argparse
@@ -23,8 +25,8 @@ class MLSystemManager:
         """
         modelmap = {
             "baseline": BaselineLearner(),
-            #"perceptron": PerceptronLearner(),
-            #"neuralnet": NeuralNetLearner(),
+            "perceptron": PerceptronLearner(),
+            "neuralnet": NeuralNetLearner(),
             #"decisiontree": DecisionTreeLearner(),
             #"knn": InstanceBasedLearner()
         }

@@ -1,0 +1,19 @@
+% 1. Title: Separable Binary Database
+%
+%
+
+@RELATION separable
+
+@ATTRIBUTE first Continuous
+@ATTRIBUTE second Continuous
+@ATTRIBUTE class {True, False}
+
+@DATA
+1,-1,True
+.5,-.5,True
+.2,.8,True
+.8,-.1,True
+-.1,.2,False
+-.8,-.2,False
+-.5,.8,False
+-.9,.1,False

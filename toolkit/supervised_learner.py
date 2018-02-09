@@ -62,7 +62,7 @@ class SupervisedLearner:
 
         else:
             # label is nominal, so measure predictive accuracy
-            if confusion:
+            if confusion: #what is confusion?
                 confusion.set_size(label_values_count, label_values_count)
                 confusion.attr_names = [labels.attr_value(0, i) for i in range(label_values_count)]
 
@@ -81,8 +81,3 @@ class SupervisedLearner:
                     correct_count += 1
 
             return correct_count / features.rows
-
-
-
-
-
